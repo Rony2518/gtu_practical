@@ -8,7 +8,7 @@ data = {
     "Maths": [100, 60, 40],
     "Science": [100, 60, 40],
 }
-dataframe = pd.DataFrame(data, np.arange(101, 104, 1))
+dataframe = pd.DataFrame(data, index=[0,1,2])
 
 first = dataframe[dataframe["Name"] == "Ronak"]
 
@@ -21,9 +21,9 @@ print(
     "\n\n",
     dataframe[["Name", "English", "Maths", "Science"]],
     "\n\n",
-    dataframe.loc[101],
+    dataframe.loc[0],
     "\n\n",
-    dataframe.loc[101, 'Enroll No']
+    dataframe.loc[0, 'Enroll No']
 )
 
 dataframe['Per(%)']=(dataframe['English']+dataframe['Maths']+dataframe['Science'])/3

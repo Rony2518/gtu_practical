@@ -1,12 +1,9 @@
 n = int(input("Enter a number:"))
-sum = 0
-mul = 1
-while(n>0):
-    rem = n % 10
-    sum = sum + rem
-    mul = mul * rem
-    n = n // 10
-if(sum==mul):
+sum=0
+for i in range(1,n):
+    if (n%i == 0):
+        sum = sum + i
+if(sum==n):
     print("Perfect Number")
 else:
     print("Not a Perfect Number")
