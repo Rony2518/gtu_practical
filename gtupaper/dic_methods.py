@@ -1,4 +1,4 @@
-dic = data = {
+dic = {
     "Team": [
         'Riders',
         'Riders',
